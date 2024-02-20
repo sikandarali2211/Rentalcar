@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarts Rental Cars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    
+
+
+</head>
+
+<body>
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container">
+                    <a class="navbar-brand" href="index.html">
+                        <span style="font-family: 'Italianno', cursive;">
+                            Smart <span style="color: #f72727; font-family: 'Italianno', cursive;"> Rental</span>
+                        </span>
+                    </a>
+
+                    <div class="navbar-collapse" id="">
+                        <div class="user_option">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#modal1" class="btn btn-dark"
+                                id="sign" style="margin-top: 15px; margin-left: 60px;">Login</button>
+                            <div class="modal fade" id="modal1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3>Login</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-container">
+                                                <div class="slide-controls">
+                                                    <input type="radio" name="silder" id="login" checked>
+                                                    <input type="radio" name="silder" id="signup">
+                                                    <label for="login" class="slide login">Login</label>
+                                                    <label for="signup" class="slide signup">Signup</label>
+                                                    <div class="slide-tab">
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-inner">
+                                                    <form action="#" class="login">
+                                                        <div class="field">
+                                                            <input type="text" placeholder="Email Address" required>
+                                                        </div>
+                                                        <div class="field">
+                                                            <input type="password" placeholder="Password" required>
+                                                        </div>
+                                                        <div class="pass-link"><a href="#">Forgot password?</a></div>
+                                                        <div class="field">
+                                                            <input type="submit" value="Login">
+                                                            <span class="loader"></span>
+                                                        </div>
+                                                        <div class="Signup-link" >Not a member?<a href="#">Signup Now</a> </div>
+                                                    </form>
+                                    
+                                                    <form action="#" class="Signup">
+                                                        <div class="field">
+                                                            <input type="text" placeholder="Email Address" required>
+                                                        </div>
+                                                        <div class="field">
+                                                            <input type="password" placeholder="Password" required>
+                                                        </div>
+                                                        <div class="field">
+                                                            <input type="password" placeholder="Confirm Password" required>
+                                                        </div>
+                                    
+                                                        <div class="field">
+                                                            <input type="submit" value="Signup">
+                                                        </div>
+                                    
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="custom_menu-btn">
+                            <button onclick="openNav()">
+                                <span class="s-1"> </span>
+                                <span class="s-2"> </span>
+                                <span class="s-3"> </span>
+                            </button>
+                        </div>
+                        <div id="myNav" class="overlay">
+                            <div class="overlay-content">
+                                <a href="index.html">Home</a>
+                                <a href="about.html">About</a>
+                                <a href="blog.html">Blog</a>
+                                <a href="gallery.html">Cars</a>
+                                <a href="services.html">Services</a>
+                                <a href="contact.html">Contact Us</a>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#modal1" class="btn btn-danger"
+                                id="sign">Login</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+        <!-- slider section -->
+        <section class=" slider_section position-relative">
+            <div class="slider_container">
+                <div class="img-box">
+                    <img src="images/hero-img.jpg" alt="" style="height: 800px;">
+                </div>
+                <div class="detail_container">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="detail-box">
+                                    <h1 style="font-family: 'Italianno', cursive;">
+                                        Rent Car <br>
+                                        Experts <br>
+                                        Service
+                                    </h1>
+                                    <a href="">
+                                        Contact Us
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="detail-box">
+                                    <h1>
+                                        Rent Car <br>
+                                        Experts <br>
+                                        Service
+                                    </h1>
+                                    <a href="">
+                                        Contact Us
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="detail-box">
+                                    <h1>
+                                        Rent Car <br>
+                                        Experts <br>
+                                        Service
+                                    </h1>
+                                    <a href="">
+                                        Contact Us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end slider section -->
+    </div>
+       <!-- Header section end -->
+    <!-- About Section Start -->
+    <section>
+        <div class="about_sectiom layout_padding" id="ab">
+            <div class="container">
+                <div class="about_section2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="imgage_iman"><img src="Image/About/about.png" class="about_img"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about_taital_box">
+                                <h1 class="about_taital">About <span style="color: #f72727;">Us</span></h1>
+                                <p class="about_text">Enterprise Smart Rent-A-Car is an ongoing Pakistan success story.
+                                    Our guiding principles, and humble beginning, revolve around personal honesty and
+                                    integrity. We believe in strengthening our communities one neighbourhood at a time,
+                                    serving our customers as if they were our family, and rewarding hard work. These
+                                    things are as true today as they were when we were founded in 2022.
+                                    <br>
+                                    <br> Today, our massive network means Enterprise is the largest transportation
+                                    solutions provider. We offer car and truck rentals, as well as car sharing and car
+                                    sales. We're there when you need us with over locations
+                                </p>
+                                <div class="readmore_btn"><a href="#">Read More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+    <section>
+        <div class="search_section" id="sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="search_taital">Search Your Best Cars</h1>
+                        <p class="search_text">Book your car rental today and embark on your next adventure with
+                            confidence.</p>
+                        <!-- select box section start -->
+                        <div class="container">
+                            <div class="select_box_section">
+                                <div class="select_box_main">
+                                    <div class="row">
+                                        <div class="col-md-3 select-outline">
+                                            <select
+                                                class="nice-select  mdb-select md-form md-outline colorful-select dropdown-primary">
+                                                <option value="" disabled selected>Select Brand</option>
+                                                <option value="1">Toyota</option>
+                                                <option value="2">Mercede</option>
+                                                <option value="3">Honda</option>
+                                                <option value="4">Kia</option>
+                                                <option value="5">Suzuki</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 select-outline">
+                                            <select
+                                                class="nice-select mdb-select md-form md-outline colorful-select dropdown-primary">
+                                                <option value="" disabled selected>Select type</option>
+                                                <option value="1">Fortune</option>
+                                                <option value="2">Benz</option>
+                                                <option value="3">Civic</option>
+                                                <option value="3">Spotage</option>
+                                                <option value="3">Alto</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-3 select-outline">
+                                            <select
+                                                class="nice-select mdb-select md-form md-outline colorful-select dropdown-primary">
+                                                <option value="" disabled selected>Price</option>
+                                                <option value="1">$5000</option>
+                                                <option value="2">$7000</option>
+                                                <option value="3">$4000</option>
+                                                <option value="3">$6000</option>
+                                                <option value="3">$1000</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="search_btn"><a href="#">Search Now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- select box section end -->
+
+    <!-- gallery section start -->
+    <section>
+        <div class="gallery_section layout_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="gallery_taital">Our best offers</h1>
+                    </div>
+                </div>
+                <div class="gallery_section_2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="Image/Gallery/mercedes 1.png"></div>
+                                <h3 class="types_text">Mercede Benz</h3>
+                                <p class="looking_text">Start per day $3500</p>
+                                <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="Image/Gallery/fortuner 2.png"></div>
+                                <h3 class="types_text">Toyota Fortuner</h3>
+                                <p class="looking_text">Start per day $4500</p>
+                                <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div>
+
+                                <!-- <b id="iteemnum"></b>
+                                <ol id=""></ol> -->
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="Image/Gallery/Civic 3.png"></div>
+                                <h3 class="types_text">Honda Civic</h3>
+                                <p class="looking_text">Start per day $2500</p>
+                                <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_section_2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="image/Gallery/Spotage 4.png"></div>
+                                <h3 class="types_text">Kia Spotage </h3>
+                                <p class="looking_text">Start per day $2500</p>
+                                <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="Image/Gallery/Kia Carnival 6.png"></div>
+                                <h3 class="types_text">Kia Carnival </h3>
+                                <p class="looking_text">Start per day $4000</p>
+                                <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="image/Gallery/Suzuki Alto 5.png"></div>
+                                <h3 class="types_text">Suzuki Alto</h3>
+                                <p class="looking_text">Start per day $1500</p>
+                                <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery section end -->
+    <!-- Chosse Section Start -->
+    <section>
+        <div class="choose_section layout_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="choose_taital">WHY CHOOSE US</h1>
+                    </div>
+                </div>
+                <div class="choose_section_2">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="icon_1"><img src="image/Chosse/Security-Transparent-PNG.png"
+                                    style="height: 100px;">
+                            </div>
+                            <h4 class="safety_text">SAFETY & SECURITY</h4>
+                            <p class="ipsum_text">Active safety will include for example, brake assist, anti-lock
+                                braking
+                                system (ABS), electronic stability control,collision warning, while passive safety
+                                will comprise seat belts, air bags or fuel tank position. </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="icon_1"><img src="image/Chosse/Online Booking.png" style="height: 100px;"></div>
+                            <h4 class="safety_text">Online Booking</h4>
+                            <p class="ipsum_text">Introducing our convenient and hassle-free online car booking
+                                platform,
+                                designed to revolutionize the way you rent vehicles! With just a few clicks, you can now
+                                secure your ideal car rental from the comfort of your own home or anywhere you have
+                                internet
+                                access.
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="icon_1"><img src="image/Chosse/Driver.png" style="height: 100px; "></div>
+                            <h4 class="safety_text">Best Drivers</h4>
+                            <p class="ipsum_text">A Driver's main responsibility is to safely transport either cargo or
+                                passengers from one location to another. They must follow traffic laws and correctly
+                                route
+                                themselves, ensuring that there is enough gas in the tank at all times for their
+                                destination.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Chosse section End -->
+    <section id="test">
+        <div class="client_section layout_padding">
+            <div class="container">
+                <div id="custom_slider" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="client_taital">What Says Customers</h1>
+                                </div>
+                            </div>
+                            <div class="client_section_2">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="client_taital_box">
+                                            <div class="client_img"><img src="Image/Testimonial/images 1.jpeg"
+                                                    style="height: 200px;"></div>
+                                            <h3 class="moark_text">Hannery</h3>
+                                            <p class="client_text">We always use the Reliable Car Rental As The price is
+                                                lower than any of their competitors. The cabs are always clean. They are
+                                                spacious enough for our household, which is a family of 6. Thank You</p>
+                                        </div>
+                                        <div class="quick_icon"><img src="image/Testimonial/Comma.png"
+                                                style="height: 100px;"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="client_taital_box">
+                                            <div class="client_img"><img src="Image/Testimonial/images 2.jpeg"
+                                                    style="height: 200px;"></div>
+                                            <h3 class="moark_text">Channery</h3>
+                                            <p class="client_text">I had booked a car from florida to Miami trip from
+                                                Reliable Car the price is really affordable and good had really nice and
+                                                friendly service. The driver was very helpful and polite, the car was
+                                                clean and worked fine.</p>
+                                        </div>
+                                        <div class="quick_icon"><img src="image/Testimonial/Comma.png"
+                                                style="height: 100px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+    </section>
+    <!-- client section end -->
+    <!-- Counter Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="counter">
+                    <div class="counter-content">
+                        <h3>Total Cars</h3>
+                        <span class="counter-value">1963</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="counter orange">
+                    <div class="counter-content">
+
+                        <h3>Happy Customers</h3>
+                        <span class="counter-value">1854</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="counter purple">
+                    <div class="counter-content">
+
+                        <h3>Total Branches</h3>
+                        <span class="counter-value">1854</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="counter green">
+                    <div class="counter-content">
+                        <h3>Total Cilents</h3>
+                        <span class="counter-value">1854</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter End -->
+
+    <!-- contact section start -->
+    <section>
+        <div class="contact_section layout_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="contact_taital">Get In Touch</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="contact_section_2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mail_section_1">
+                                <input type="text" class="mail_text" placeholder="Name" name="Name">
+                                <input type="text" class="mail_text" placeholder="Email" name="Email">
+                                <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number">
+                                <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment"
+                                    name="Massage"></textarea>
+                                <div class="send_bt"><a href="#">Send</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+    <!-- Footer Start -->
+
+    <section>
+        <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 10px; " id="color">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                    <p class="text-white mb-2"><i class="fa fa-map-marker text-white mr-3" id="size"></i>123 street
+                        Karachi Pakistan.</p>
+                    <p class="text-white mb-2"><i class="fa fa-phone text-white mr-3" id="size"></i>+012 345 67890</p>
+                    <p class="text-white mb-2"><i class="fa fa-envelope text-white mr-3"
+                            id="size"></i>smartrentalcar@gmail.com</p>
+                    <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="privacypolicy.html"><i
+                                class="fa fa-angle-right text-white mr-2" id="size"></i>Private Policy</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"
+                                id="size"></i>Term & Conditions</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
+                    <div class="row mx-n1">
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/bentley.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/civic.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/Kia.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/mercede benz 1.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/vigo.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/wagon G.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                    <p class="text-white mb-4" id="size">After more than 20 years in business, we decided to give a
+                        fresher look to our brand and our services. With our fully renewed fleet of vehicles, we are
+                        ready to meet all expectations and requirements.</p>
+                    <div class="w-100 mb-3">
+                        <div class="input-group">
+                            <input type="text" class=" text-white form-control bg-dark border-dark "
+                                style="padding: 25px;" placeholder="Your Email">
+                            <div class="input-group-append">
+                                <button class="btn btn-danger text-uppercase px-3">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Footer End -->
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarts Rental Cars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+</head>
+
+<body id="pay">
+    <!-- header section strats -->
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+                <a class="navbar-brand" href="index.html">
+                    <span style="font-family: 'Italianno', cursive;">
+                        Smart <span style="color: #f72727; font-family: 'Italianno', cursive;"> Rental</span>
+                    </span>
+                </a>
+
+                <div class="navbar-collapse" id="">
+                    <div class="user_option">
+                
+                <div class="custom_menu-btn">
+                    <button onclick="openNav()">
+                        <span class="s-1"> </span>
+                        <span class="s-2"> </span>
+                        <span class="s-3"> </span>
+                    </button>
+                </div>
+                <div id="myNav" class="overlay">
+                    <div class="overlay-content">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="gallery.html">Cars</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Login</a>
+                    </div>
+                </div>
+        </div>
+        </nav>
+        </div>
+    </div>
+
+</div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+        <div class="slider_container">
+            <div class="img-box">
+                <img src="images/hero-img.jpg" alt="" style="height: 800px;">
+            </div>
+            <div class="detail_container">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="detail-box">
+                                <h1 style="font-family: 'Italianno', cursive;">
+                                    Rent Car <br>
+                                    Experts <br>
+                                    Service
+                                </h1>
+                                <a href="">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="detail-box">
+                                <h1>
+                                    Rent Car <br>
+                                    Experts <br>
+                                    Service
+                                </h1>
+                                <a href="">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="detail-box">
+                                <h1>
+                                    Rent Car <br>
+                                    Experts <br>
+                                    Service
+                                </h1>
+                                <a href="">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- end slider section -->
+ <!-- book section -->
+ <section class="book_section">
+    <div class="form_container">
+      <form action="">
+        <div class="form-row">
+          <div class="col-lg-8">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="parkingName">Pick Up Locaion</label>
+                <input type="text" class="form-control" placeholder="D.H.A Lahore ">
+              </div>
+              <div class="col-md-6">
+                <label for="parkingNumber">Drop Location</label>
+                <input type="text" class="form-control " placeholder="PECHS Karachi ">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="parkingName">Pick Up Date</label>
+                <input type="date" class="form-control " placeholder="07/09/2020">
+              </div>
+              <div class="col-md-6">
+                <label for="parkingNumber">Return Date</label>
+                <input type="date" class="form-control" placeholder="07/09/2020">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="btn-container">
+              <button type="submit" class="">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <div class="img-box">
+      <img src="images/book-car.png" alt="" height="200px">
+    </div>
+  </section>
+
+<!-- book section End -->
+    <!-- gallery section start -->
+    <section>
+        <div class="gallery_section layout_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="gallery_taital text-danger">Our best offers</h1>
+                    </div>
+                </div>
+                <div class="gallery_section_2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="Image/Gallery/mercedes 1.png"></div>
+                                <h3 class="types_text">Mercede Benz</h3>
+                                <p class="looking_text">Start per day $3500</p>
+                                <!-- <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div> -->
+                                <button class="btn btn-danger read_bt" onclick="add()" >Book Now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="Image/Gallery/fortuner 2.png"></div>
+                                <h3 class="types_text">Toyota Fortuner</h3>
+                                <p class="looking_text">Start per day $4500</p>
+                                <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="Image/Gallery/Civic 3.png"></div>
+                                <h3 class="types_text">Honda Civic</h3>
+                                <p class="looking_text">Start per day $2500</p>
+                                <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_section_2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="image/Gallery/Spotage 4.png"></div>
+                                <h3 class="types_text">Kia Spotage </h3>
+                                <p class="looking_text">Start per day $2500</p>
+                                <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="Image/Gallery/Kia Carnival 6.png"></div>
+                                <h3 class="types_text">Kia Carnival </h3>
+                                <p class="looking_text">Start per day $4000</p>
+                                <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery_box">
+                                <div class="gallery_img"><img src="image/Gallery/Suzuki Alto 5.png"></div>
+                                <h3 class="types_text">Suzuki Alto</h3>
+                                <p class="looking_text">Start per day $1500</p>
+                                <div class="read_bt"><a href="#" onclick="add()">Book Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery section end -->
+<!-- Detail Start -->
+<div class="container-fluid pt-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="display-4 text-uppercase mb-5">Mercedes Benz R3</h1>
+        <div class="row align-items-center pb-2">
+            <div class="col-lg-6 mb-4">
+                <img class="img-fluid" src="Image/Booking/M1.png" alt="">
+            </div>
+            <div class="col-lg-6 mb-4">
+                <h4 class="mb-2">$99.00/Day</h4>
+                <div class="d-flex mb-3">
+                    <h6 class="mr-2">Rating:</h6>
+                    <div class="d-flex align-items-center justify-content-center mb-1">
+                        <small class="fa fa-star text-danger mr-1"></small>
+                        <small class="fa fa-star text-danger mr-1"></small>
+                        <small class="fa fa-star text-danger mr-1"></small>
+                        <small class="fa fa-star text-danger mr-1"></small>
+                        <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                        <small>(250)</small>
+                    </div>
+                </div>
+                <p>Whether it is for business or for private, in budget or first class style. With SMART ride, you get ride services tailored to your needs. By logging in to our platform, you benefit from a choice of different booking classes and the largest coverage of ride services worldwide.</p>
+                <div class="d-flex pt-1">
+                    <h6>Share on:</h6>
+                    <div class="d-inline-flex">
+                        <a class="px-2" href="#"><i class="fa fa-facebook text-danger"></i></a>
+                        <a class="px-2" href="#"><i class="fa fa-twitter text-danger"></i></a>
+                        <a class="px-2" href="#"><i class="fa fa-linkedin text-danger"></i></a>
+                        <a class="px-2" href="#"><i class="fa fa-pinterest text-danger"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-n3 mt-lg-0 pb-4">
+            <div class="col-md-3 col-6 mb-2">
+                <!-- <i class="fa fa-car text-danger mr-2"></i> -->
+                <img src="Image/services/taxi.png" style="height: 20px;">
+                <span>Alto: 2023</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-cogs text-dark mr-2"></i>
+                <span>Automatic</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-road text-dark mr-2"></i>
+                <span>10km/liter</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-eye text-dark mr-2"></i>
+                <span>GPS Navigation</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <!-- <i class="fa fa-car text-danger mr-2"></i> -->
+                <img src="Image/services/taxi.png" style="height: 20px;">
+                <span>Civic: 2022</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-cogs text-dark mr-2"></i>
+                <span>Automatic</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-road text-dark mr-2"></i>
+                <span>15km/liter</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-eye text-dark mr-2"></i>
+                <span>GPS Navigation</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <!-- <i class="fa fa-car text-danger mr-2"></i> -->
+                <img src="Image/services/taxi.png" style="height: 20px;">
+                <span>Mercedes : 2021</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-cogs text-dark mr-2"></i>
+                <span>Automatic</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-road text-dark mr-2"></i>
+                <span>20km/liter</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-eye text-dark mr-2"></i>
+                <span>GPS Navigation</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <!-- <i class="fa fa-car text-danger mr-2"></i> -->
+                <img src="Image/services/taxi.png" style="height: 20px;">
+                <span>Carnival: 2021</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-cogs text-dark mr-2"></i>
+                <span>Automatic</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-road text-dark mr-2"></i>
+                <span>18km/liter</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-eye text-dark mr-2"></i>
+                <span>GPS Navigation</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <!-- <i class="fa fa-car text-danger mr-2"></i> -->
+                <img src="Image/services/taxi.png" style="height: 20px;">
+                <span>Spotage: 2023</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-cogs text-dark mr-2"></i>
+                <span>Automatic</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-road text-dark mr-2"></i>
+                <span>19km/liter</span>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+                <i class="fa fa-eye text-dark mr-2"></i>
+                <span>GPS Navigation</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Detail End -->
+
+
+
+
+    <!-- Footer Start -->
+
+    <section>
+        <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 10px; " id="color">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                    <p class="text-white mb-2"><i class="fa fa-map-marker text-white mr-3" id="size"></i>123 street
+                        Karachi Pakistan.</p>
+                    <p class="text-white mb-2"><i class="fa fa-phone text-white mr-3" id="size"></i>+012 345 67890</p>
+                    <p class="text-white mb-2"><i class="fa fa-envelope text-white mr-3"
+                            id="size"></i>smartrentalcar@gmail.com</p>
+                    <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="privacypolicy.html"><i class="fa fa-angle-right text-white mr-2"
+                                id="size"></i>Private Policy</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"
+                                id="size"></i>Term & Conditions</a>
+                     
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
+                    <div class="row mx-n1">
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/bentley.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/civic.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/Kia.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/mercede benz 1.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/vigo.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/wagon G.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                    <p class="text-white mb-4" id="size">After more than 20 years in business, we decided to give a
+                        fresher look to our brand and our services. With our fully renewed fleet of vehicles, we are
+                        ready to meet all expectations and requirements.</p>
+                    <div class="w-100 mb-3">
+                        <div class="input-group">
+                            <input type="text" class=" text-white form-control bg-dark border-dark "
+                                style="padding: 25px;" placeholder="Your Email">
+                            <div class="input-group-append">
+                                <button class="btn btn-danger text-uppercase px-3">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+<!-- Footer End -->
+<script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+

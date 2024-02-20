@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarts Rental Cars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+</head>
+
+<body>
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <a class="navbar-brand" href="index.html">
+                <span style="font-family: 'Italianno', cursive;">
+                  Smart <span style="color: #f72727; font-family: 'Italianno', cursive;"> Rental</span>
+                </span>
+              </a>
+    
+              <div class="navbar-collapse" id="">
+                <div class="user_option">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal1" class="btn btn-dark"
+                    id="sign" style="margin-top: 15px; margin-left: 60px;">Login</button>
+
+                <div class="modal fade" id="modal1">
+                    <div class="modal-dialog ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Login</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+
+                                    <input type="text" placeholder="First Name"
+                                        class="form-control w-100 mt-4" required>
+                                    <input type="text" placeholder="Last Name"
+                                        class="form-control w-100 mt-4" required>
+                                    <input type="text" placeholder="Email" class="form-control w-100 mt-4"
+                                        required>
+                                    <img src="Image/Modal/show-password-icon-18.jpg" class="eye"
+                                        onclick="result() ">
+                                    <input type="password" placeholder="Password"
+                                        class="form-control w-50 mt-4" id="user" required>
+                                    <img src="Image/Modal/show-password-icon-18.jpg" class="eye"
+                                        onclick="result1()">
+                                    <input type="password" placeholder="Confirm Password"
+                                        class="form-control w-50 mt-4 " id="conf" required>
+                                    <button type="submit w-100 mt-4"
+                                        style="height: 50px; width: 100px; margin: 10px; border-radius: 5px; color: rgb(15, 15, 15); background-color: rgb(250, 44, 44);">Submit</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                <div class="custom_menu-btn">
+                  <button onclick="openNav()">
+                    <span class="s-1"> </span>
+                    <span class="s-2"> </span>
+                    <span class="s-3"> </span>
+                  </button>
+                </div>
+                <div id="myNav" class="overlay">
+                  <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="gallery.html">Cars</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Login</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <!-- end header section -->
+        <!-- slider section -->
+        <section class=" slider_section position-relative">
+          <div class="slider_container">
+            <div class="img-box">
+              <img src="images/hero-img.jpg" alt="" style="height: 800px;">
+            </div>
+            <div class="detail_container">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="detail-box">
+                      <h1 style="font-family: 'Italianno', cursive;">
+                        Rent Car <br>
+                        Experts <br>
+                        Service
+                      </h1>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="detail-box">
+                      <h1>
+                        Rent Car <br>
+                        Experts <br>
+                        Service
+                      </h1>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="detail-box">
+                      <h1>
+                        Rent Car <br>
+                        Experts <br>
+                        Service
+                      </h1>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </section>
+        <!-- end slider section -->
+      </div>
+      <!-- book section -->
+      <section class="book_section">
+        <div class="form_container">
+          <form action="">
+            <div class="form-row">
+              <div class="col-lg-8">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <label for="parkingName">Pick Up Locaion</label>
+                    <input type="text" class="form-control" placeholder="D.H.A Lahore ">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="parkingNumber">Drop Location</label>
+                    <input type="text" class="form-control " placeholder="PECHS Karachi ">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <label for="parkingName">Pick Up Date</label>
+                    <input type="date" class="form-control " placeholder="07/09/2020">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="parkingNumber">Return Date</label>
+                    <input type="date" class="form-control" placeholder="07/09/2020">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="btn-container">
+                  <button type="submit" class="">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+    
+          </form>
+        </div>
+        <div class="img-box">
+          <img src="images/book-car.png" alt="" height="200px">
+        </div>
+      </section>
+   <!-- Header section end -->
+    <!-- policy Section Start -->
+    <Section id="Pol">
+        <div class="terms-box">
+            <div class="terms-text">
+                <h2>Privacy Policy</h2>
+                <p>Last Edit: 09/07/2023</p>
+                <p>Greeting User </p>
+                <p> A privacy policy for car rental services typically outlines how the company collects, uses, stores,
+                    and protects personal information obtained from customers. Here are some common elements that may be
+                    included: </p>
+                1. <p> Information Collection: The policy will detail the types of personal information collected, such
+                    as name, contact details, driver's license information, payment details, and any additional
+                    information required for rental purposes. </p>
+                2. <p> Use of Information: It will explain how the company utilizes the collected information, which may
+                    include processing reservations, managing rental agreements, facilitating payments, providing
+                    customer support, and complying with legal requirements. </p>
+                3. <p> Data Sharing: The policy may specify instances where the company shares personal information with
+                    third parties. This can include sharing information with affiliates, service providers, insurance
+                    companies, government authorities, and other entities as required by law. </p>
+                4. <p> Data Security: The policy should outline the security measures implemented to protect personal
+                    information from unauthorized access, loss, misuse, or alteration. This can include encryption,
+                    access controls, regular system monitoring, and employee training on data protection. </p>
+                5. <p> Retention and Disposal: It will specify the duration for which the company retains personal
+                    information and the procedures for securely disposing of it once it is no longer needed. </p>
+                6. <p> Cookies and Tracking Technologies: If the company uses cookies or similar tracking technologies
+                    on their website or mobile applications, the policy will explain the purpose of such technologies
+                    and provide options for managing cookie preferences. </p>
+                7. <p> Marketing Communications: If the company intends to send promotional emails or marketing
+                    communications, the policy will explain how customers can opt-in or opt-out of such communications.
+                </p>
+                8. <p> Legal Compliance: The policy will highlight the company's commitment to complying with applicable
+                    data protection laws and regulations, such as the General Data Protection Regulation (GDPR) in the
+                    European Union or the California Consumer Privacy Act (CCPA) in the United States. </p>
+                9. <p> Updates to the Privacy Policy: The policy should mention that it may be updated from time to
+                    time, and the latest version will be available on the company's website. </p>
+
+
+            </div>
+            <h4>I Agree to the <span> Terms of Services</span> and I read the privacy Notice.</h4>
+            <div class="button1">
+                <button class="btn1 red-btn">
+                    Accept
+                </button>
+                <button class="btn1 gray-btn">
+                    Decline
+                </button>
+            </div>
+        </div>
+    </Section>
+
+    <!-- policy section End -->
+    <!-- Footer Start -->
+
+    <section>
+        <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 10px; " id="color">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                    <p class="text-white mb-2"><i class="fa fa-map-marker text-white mr-3" id="size"></i>123 street
+                        Karachi Pakistan.</p>
+                    <p class="text-white mb-2"><i class="fa fa-phone text-white mr-3" id="size"></i>+012 345 67890</p>
+                    <p class="text-white mb-2"><i class="fa fa-envelope text-white mr-3"
+                            id="size"></i>smartrentalcar@gmail.com</p>
+                    <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="privacypolicy.html"><i
+                                class="fa fa-angle-right text-white mr-2" id="size"></i>Private Policy</a>
+                        <a class="text-white mb-2" href="term&condination.html"><i class="fa fa-angle-right text-white mr-2"
+                                id="size"></i>Term & Conditions</a>
+                     
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
+                    <div class="row mx-n1">
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/bentley.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/civic.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/Kia.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/mercede benz 1.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/vigo.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                        <div class="col-4 px-1 mb-2">
+                            <a href=""><img class="w-100" src="Image/footer gallery/wagon G.jpg" alt=""
+                                    style="height: 100px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                    <p class="text-white mb-4" id="size">After more than 20 years in business, we decided to give a
+                        fresher look to our brand and our services. With our fully renewed fleet of vehicles, we are
+                        ready to meet all expectations and requirements.</p>
+                    <div class="w-100 mb-3">
+                        <div class="input-group">
+                            <input type="text" class=" text-white form-control bg-dark border-dark "
+                                style="padding: 25px;" placeholder="Your Email">
+                            <div class="input-group-append">
+                                <button class="btn btn-danger text-uppercase px-3">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Footer End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
